@@ -10,9 +10,10 @@ include device/lenovo/mt6765-common/BoardConfigCommon.mk
 DEVICE_PATH := device/lenovo/mt6765-common/X306FC/
 
 # Display
-TARGET_SCREEN_DENSITY := 150
+TARGET_SCREEN_DENSITY := 160
 
 # Kernel
+TARGET_FORECE_PREBUILT_KERNEL := true
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
