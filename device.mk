@@ -24,12 +24,11 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/prebuilt/Image.gz:kernel
 
 # Inherit from the common OEM chipset makefile.
-$(call inherit-product, device/lenovo/mt6765-common/device-common.mk)
+$(call inherit-product, device/lenovo/mt6765-common/common.mk)
 
 # Inherit for tablet
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 # Call the proprietary device makefile
 $(call inherit-product, vendor/lenovo/mt6765-common/mt6765-common-vendor.mk)
-
 

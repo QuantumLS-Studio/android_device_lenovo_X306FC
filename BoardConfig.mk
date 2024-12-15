@@ -7,10 +7,11 @@
 # Include the common OEM chipset BoardConfig.
 include device/lenovo/mt6765-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/lenovo/mt6765-common/X306FC/
+DEVICE_PATH := device/lenovo/X306FC/
 
 # Display
 TARGET_SCREEN_DENSITY := 160
+TARGET_USES_VULKAN := true
 
 # Kernel
 TARGET_FORECE_PREBUILT_KERNEL := true
