@@ -13,6 +13,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 800
 
+# It's a tablet
 PRODUCT_CHARACTERISTICS := tablet
 
 # Soong namespaces
@@ -31,4 +32,7 @@ $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-he
 
 # Call the proprietary device makefile
 $(call inherit-product, vendor/lenovo/mt6765-common/mt6765-common-vendor.mk)
+
+# AOSP config
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
