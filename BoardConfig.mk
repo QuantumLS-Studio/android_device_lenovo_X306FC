@@ -7,7 +7,10 @@
 # Include the common OEM chipset BoardConfig.
 include device/lenovo/mt6765-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/lenovo/X306FC/
+DEVICE_PATH := device/lenovo/X306FC
+
+# Charger suspend!
+BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # Display
 TARGET_SCREEN_DENSITY := 160
