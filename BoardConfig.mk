@@ -9,9 +9,6 @@ include device/lenovo/mt6765-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/lenovo/X306FC
 
-# Charger suspend!
-#BOARD_CHARGER_ENABLE_SUSPEND := true
-
 # Display
 TARGET_SCREEN_DENSITY := 160
 #TARGET_USES_VULKAN := true
