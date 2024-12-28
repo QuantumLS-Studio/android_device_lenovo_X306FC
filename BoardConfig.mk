@@ -11,7 +11,6 @@ DEVICE_PATH := device/lenovo/X306FC
 
 # Display
 TARGET_SCREEN_DENSITY := 160
-TARGET_USES_VULKAN := true
 
 # Kernel
 TARGET_FORECE_PREBUILT_KERNEL := true
@@ -19,6 +18,8 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)/prebuilt/lkm-4.9/*.ko)
+
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/recovery.fstab
 
 # SPL
 SYSTEM_SECURITY_PATCH := 2024-12-21
